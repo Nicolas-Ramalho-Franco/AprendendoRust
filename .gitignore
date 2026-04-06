@@ -1,0 +1,24 @@
+# Arquivos de build do Cargo
+/target/
+
+# Arquivos de trava (recomenda-se commitar para binários, ignorar para bibliotecas)
+# Cargo.lock
+
+# Arquivos de IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Binários e bibliotecas compiladas
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Logs e arquivos de banco de dados
+*.log
+*.sqlite
