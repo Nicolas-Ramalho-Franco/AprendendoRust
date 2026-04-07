@@ -1,5 +1,5 @@
 const PI: f64 = 3.14;
-static  variavel_global: i32 =1;
+static  Global: i32 =1;
 
 fn sombra(){
     let a =123;
@@ -14,7 +14,7 @@ fn sombra(){
 
 fn escopo(){
     println!("PI: {}", PI);
-    print!("Variavel global:  {} ", variavel_global);
+    print!("Variavel global:  {} ", Global);
 
     let variavel = 300;
     println!("variavel = {}, tamanho ={} bytes", variavel,std::mem::size_of_val(&variavel));
