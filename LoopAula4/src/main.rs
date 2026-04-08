@@ -1,5 +1,6 @@
 fn main() {
-    repticao()
+    repticao();
+    ownership();
 }
 fn repticao(){
     let multiplicador :u8 = 5;
@@ -24,5 +25,14 @@ fn repticao(){
     for i in 1..11{
         println!("{} X {} = {}",multiplicador, i, multiplicador*i );
     }
+}
+fn ownership(){
+    let mut uma_string = String::from("Nicolas");
+    rouba(& mut uma_string);
 
+    println!("{}", uma_string);
+}
+fn rouba(string: &mut String) {
+    string.push_str(" Ramalho");
+    println!("{}", string);
 }

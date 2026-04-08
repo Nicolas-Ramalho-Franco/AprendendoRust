@@ -1,4 +1,3 @@
-use std::ptr::null;
 
 fn main() {
     let linguagem = "oi";
